@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ randAlpha 8 }}
+  name: {{ randAlpha 8 | lower }}
 spec:
   template:
     spec:
