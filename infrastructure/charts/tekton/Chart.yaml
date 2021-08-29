@@ -23,6 +23,6 @@ version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-  - name: tekton
-    version: 9.0.3
+  - name: cdf/tekton-pipeline
+    version: 0.27.2
     repository: https://cdfoundation.github.io/tekton-helm-chart/
