@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: environments/dev/apps
+    path: environments/dev/infra
     repoURL: https://github.com/w0wka91/k8s-argo.git
     targetRevision: HEAD
   syncPolicy:
