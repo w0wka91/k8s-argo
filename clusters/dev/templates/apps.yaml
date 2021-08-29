@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: apps
   namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "4"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -13,8 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: environments/dev/apps
+    path: apps/dev
     repoURL: https://github.com/w0wka91/k8s-argo.git
     targetRevision: HEAD
-  syncPolicy:
-    automated: {}
