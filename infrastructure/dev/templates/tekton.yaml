@@ -6,13 +6,11 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    namespace: default
-    server: https://kubernetes.default.svc
   project: default
+  destination:
+    namespace: dev
+    server: https://kubernetes.default.svc
   source:
     path: infrastructure/charts/tekton
     repoURL: https://github.com/w0wka91/k8s-argo.git
     targetRevision: HEAD
-  syncPolicy:
-    automated: {}
